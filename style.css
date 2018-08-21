@@ -1,0 +1,33 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 600px;
+    min-width: 320px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.table-layout {
+    border: 2px solid black;
+    padding: 10px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    color: red;
+}
+
+.login {
+    text-align: center;
+    height: 200px;
+    max-width: 600px;
+    min-width: 320px;
+    border: 2px solid black;
+    background-color: aliceblue;
+}
