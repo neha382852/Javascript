@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="stylecss.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <main class="main-content">
+        <section class="screen">
+            <div><input type="text" id="inputnum" placeholder="Enter Epression" onkeypress="keyPress(event);" autofocus /></div>
+            <div class="display">
+                <label id="result">Result Display:</label>
+            </div>
+        </section>
+        <section class="calc-body">
+            <section class="button-section">
+                <div><button class="space" onclick="screenClear()">CLR</button></div>
+                <div><button class="space" onclick="inputData(this.value)" value="0">0</button></div>
+                <div><button class="space" onclick="calculateResult()" value="=">=</button></div>
+                <div><button class="space" onclick="inputData(this.value)" value="*">*</button></div>
+
+            </section>
+            <section class="button-section">
+                <div><button class="space" onclick="inputData(this.value)" value="9">9</button></div>
+                <div><button class="space" onclick="inputData(this.value)" value="8">8</button></div>
+                <div><button class="space" onclick="inputData(this.value)" value="7">7</button></div>
+                <div><button class="space" onclick="inputData(this.value)" value="+">+</button></div>
+            </section>
+            <section class="button-section">
+                <div><button class="space" onclick="inputData(this.value)" value="6">6</button></div>
+                <div><button class="space" onclick="inputData(this.value)" value="5">5</button></div>
+                <div><button class="space" onclick="inputData(this.value)" value="4">4</button></div>
+                <div><button class="space" onclick="inputData(this.value)" value="/">/</button></div>
+            </section>
+            <section class="button-section">
+                <div><button class="space" onclick="inputData(this.value)" value="3">3</button></div>
+                <div><button class="space" onclick="inputData(this.value)" value="2">2</button></div>
+                <div><button class="space" onclick="inputData(this.value)" value="1">1</button></div>
+                <div><button class="space" onclick="inputData(this.value)" value="-">-</button></div>
+            </section>
+        </section>
+        <section class="history">
+            <button class="hist-button" onclick="viewHistory()">History</button>
+            <div class="display">
+                <label id="histresult">History Display:</label>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
