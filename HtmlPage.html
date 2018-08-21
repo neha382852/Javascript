@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="script.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>User Registeration Form </h1>
+    <form onsubmit="return validateForm(this)" action="login.html">
+        <table class="table-layout">
+            <tr><td><label>First Name*</label><td><input type="text" id="firstname" placeholder="Enter First Name" /><br /></td></tr>
+            <tr><td colspan="2"><p id="requiredFirstName"></p></tr>
+            <tr><td><label>Last Name</label><td><input type="text" id="lastname" placeholder="Enter Last Name" /><br /></td></tr>
+            <tr><td colspan="2"><p id="lastName"></p></tr>
+            <tr><td><label>Mobile Number*</label><td><input type="text" id="mobile" placeholder="Enter Mobile Number" /><br /></td></tr>
+            <tr><td colspan="2"><p id="requiredMobileNumber"></p></tr>
+            <tr><td><label>Email*</label><td><input type="text" placeholder="Enter email" id="mail" /><br /></tr>
+            <tr><td colspan="2"><p id="requiredEmail"></p></tr>
+            <tr><td><label>Address</label><td><textarea></textarea><br></td>
+            <tr><td colspan="2"><p></p></tr>
+            <tr><td><label>City*</label><td><select id="dropdown"><option>--Select--</option><option>Mumbai</option><option>Pune</option><option>Bangalore</option><option>Hyderabad</option><option>Delhi</option><option>Other</option></select><br></tr>
+            <tr><td colspan="2"><p id="requiredCity"></p></tr>
+            <tr><td><label>Gender*</label><td><label>Male</label><input type="radio" name="Gender" /><label>Female</label><input type="radio" name="Gender" /><label>Trans</label><input type="radio" name="Gender" /></tr>
+            <tr><td colspan="2"><p id="requiredGender"></p></tr>
+            <tr><td colspan="2"><input type="submit" value="submit" /></tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
