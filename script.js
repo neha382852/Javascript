@@ -9,7 +9,7 @@ function inputData(data) {
 
 function screenClear() {
     input = "";
-    screenDisplay("");
+    inputData("");
 }
 
 function calculateResult() {
