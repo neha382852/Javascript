@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body  onclick="hideSuggestions()">
+    <div class="main-content">
+        <div class="wrapper">
+            <input type="text" id="userInput" onkeyup="searchSuggestions(event)" onFocus="searchSuggestions(event)" placeholder="Type your text here...." />
+            <button onclick="clearTextBox()">X</button>
+        </div>
+        <ul id="suggestion"></ul>
+    </div>
+</body>
+</html>
