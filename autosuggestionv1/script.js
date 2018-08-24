@@ -15,7 +15,6 @@ function clearTextBox() {
 }
 
 function searchSuggestions(event) {
-    debugger;
     event = (event) ? event : window.event;
     var charCode = (event.which) ? event.which : event.keyCode;
     var suggestions = document.getElementById("suggestion");
